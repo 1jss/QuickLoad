@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QuickLoad Demo</title>
+</head>
+
+<body>
+  <div ql-get="fragment.html" ql-event="click" ql-target="#clicktarget" id="clicktarget">Click me!</div>
+  <div ql-get="fragment.html" ql-event="click" ql-target="#loadtarget" ql-swap="outerHTML">And me!</div>
+  <div ql-get="fragment2.html" ql-event="load" ql-target="#loadtarget" id="loadtarget"></div>
+  <script src="quickload.js"></script>
+</body>
+
+</html>
