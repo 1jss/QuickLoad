@@ -1,5 +1,5 @@
 # QuickLoad
-QuickLoad.js is a tiny JS library heavily inspired by HTMX that lets the user build dynamic web pages with minimal effort.
+QuickLoad.js is a tiny (733B) JS library heavily inspired by HTMX that lets the user build dynamic web pages with minimal effort.
  
  Example:
  ```HTML
