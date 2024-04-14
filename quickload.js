@@ -14,9 +14,7 @@ function findElements(parentElement) {
 function addEvent(element) {
   var event = element.getAttribute('ql-event');
   if (event === 'load') {
-    window.addEventListener('load', function () {
-      getContent(element);
-    });
+    getContent(element);
   } else {
     element.addEventListener('click', function () {
       getContent(element);
@@ -31,8 +29,8 @@ function addEvent(element) {
 function getContent(element) {
   var url = element.getAttribute('ql-get');
   var target = element.getAttribute('ql-target');
-  var targetElement = target ? document.querySelector(target): element;
-  if(!targetElement) return; // Target wanted, but not found
+  var targetElement = target ? document.querySelector(target) : element;
+  if (!targetElement) return; // Target wanted, but not found
   var swap = element.getAttribute('ql-swap') || 'innerHTML';
   var request = new XMLHttpRequest();
   request.open('GET', url, true);
