@@ -9,22 +9,27 @@
     body {
       font-family: sans-serif;
       padding: 16px;
-      color: #555;
+      color: #555
     }
-    p, .btn {
-      padding: 6px 0 4px 8px;
-      margin: 0;
-      margin-bottom: 8px;
-      border-radius: 4px;
 
-    }
+    .btn,
     p {
-      background-color: #f0f0f0;
-      border: 1px solid #eee;
+      padding: 6px 0 4px 8px;
+      margin: 0 0 8px;
+      border-radius: 4px
     }
+
+    p {
+      background-color: #f0f0f0
+    }
+
+    .btn,
+    p {
+      border: 1px solid #eee
+    }
+
     .btn {
-      cursor: pointer;
-      border: 1px solid #eee;
+      cursor: pointer
     }
   </style>
 </head>
@@ -34,7 +39,7 @@
   <div ql-get="fragment1.html" ql-event="click" ql-swap="outerHTML" class="btn">Click me!</div>
   <div ql-get="fragment1.html" ql-event="click" ql-target="#loadtarget" class="btn">And me!</div>
   <div ql-get="fragment2.html" ql-event="load" ql-target="#loadtarget" id="loadtarget"></div>
-  <script src="quickload.js"></script>
+  <script src="quickload.min.js"></script>
 </body>
 
 </html>
